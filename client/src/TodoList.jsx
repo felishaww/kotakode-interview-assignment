@@ -15,20 +15,6 @@ export default function TodoList({ tasks, setTasks }) {
             task={item}
           />
         ))}
-        <Task
-          key="998"
-          item="Masak Ikan"
-          index="998"
-          tasks={tasks}
-          setTasks={setTasks}
-        />
-        <Task
-          key="999"
-          item="Minum Air"
-          index="998"
-          tasks={tasks}
-          setTasks={setTasks}
-        />
       </ul>
     </div>
   );
