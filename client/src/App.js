@@ -17,7 +17,7 @@ function App() {
   const [inputTask, setInputTask] = useState("");
   return (
     <div className="App">
-      <h1>Pekerjaan Rumah Yang Perlu Dilakukan</h1>
+      <h1 className="text-super heading">Pekerjaan Rumah Yang Perlu Dilakukan</h1>
       <TodoForm
         inputTask={inputTask}
         setInputTask={setInputTask}
