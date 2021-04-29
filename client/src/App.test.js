@@ -1,10 +1,10 @@
 import React from 'react';
-import { render, queryByAttribute, userEvent } from '@testing-library/react';
+import { render, queryByAttribute, fireEvent } from '@testing-library/react';
 import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
+  const linkElement = getByText(/Pekerjaan Rumah Yang Perlu Dilakukan/i);
   expect(linkElement).toBeInTheDocument();
 });
 
@@ -16,5 +16,12 @@ test('render task input', () => {
   expect(inputEl).toBeInTheDocument();
   expect(inputEl).toHaveAttribute("type", "text");
 });
+
+test("pass valid task to test input value", () => {
+  const dom = render(<App />);
+  const inputEl = getById(dom.container, "taskInput");
+  fireEvent.change(inputEl, {target: {value: 'Tidur'}});
+  expect(inputEl.value).toBe('Tidur');
+})
 
 

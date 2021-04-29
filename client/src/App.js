@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TodoList from "./TodoList";
-import TodoForm from "./TodoForm";
+import TodoList from "./components/TodoList";
+import TodoForm from "./components/TodoForm";
 
 function App() {
   const [tasks, setTasks] = useState([
@@ -28,7 +28,6 @@ function App() {
         setTasks={setTasks}
       />
       <TodoList tasks={tasks} setTasks={setTasks} />
-      <h3>learn react</h3>
     </div>
     
   );
