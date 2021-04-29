@@ -9,7 +9,8 @@ export default function TodoForm({ setInputTask, inputTask, tasks, setTasks }) {
     e.preventDefault();
     setTasks([...tasks, { 
         id: tasks.length + 1, 
-        task: inputTask 
+        task: inputTask,
+        status: false
     }]);
     setInputTask("");
   };

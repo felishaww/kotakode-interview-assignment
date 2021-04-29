@@ -37,7 +37,7 @@ button {
   padding: 0.7rem 1.5rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: 1rem 0rem 1rem 0.5rem;
   color: white;
 }
 
@@ -95,4 +95,13 @@ li{
   font-size: 1.2rem;
   font-weight: 500;
   color:white;
+}
+
+.complete{
+  opacity: 40%;
+}
+
+.button-container{
+  display: flex;
+  align-items: center;
 }

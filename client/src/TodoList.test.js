@@ -7,10 +7,12 @@ test('Renders Todo List Correctly', () => {
     {
       id: 1,
       task: "masak ikan",
+      status: false
     },
     {
       id: 2,
       task: "minum air",
+      status: false
     },
     
   ]} />);

@@ -7,10 +7,12 @@ function App() {
     {
       id: 1,
       task: "Cuci Baju",
+      status: false
     },
     {
       id: 2,
       task: "Masak Nasi",
+      status: false
     },
     
   ]);
