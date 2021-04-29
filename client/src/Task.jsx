@@ -7,7 +7,7 @@ export default function Task({ item, index, tasks, setTasks, task }) {
   };
 
   return (
-    <div>
+    <div className="task-item">
       <li>{item}</li>
       <button onClick={handleDelete}>Hapus</button>
     </div>

@@ -7,6 +7,6 @@ test('Renders Todo List Correctly', () => {
   const linkElement = getByText(/masak ikan/i);
   expect(linkElement).toBeInTheDocument();
 
-  const linkElement = getByText(/minum air/i);
+  const linkElement2 = getByText(/minum air/i);
   expect(linkElement).toBeInTheDocument();
 });

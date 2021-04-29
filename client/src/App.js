@@ -12,6 +12,7 @@ function App() {
       id: 2,
       task: "Masak Nasi",
     },
+    
   ]);
 
   const [inputTask, setInputTask] = useState("");
@@ -25,7 +26,9 @@ function App() {
         setTasks={setTasks}
       />
       <TodoList tasks={tasks} setTasks={setTasks} />
+      <h3>learn react</h3>
     </div>
+    
   );
 }
 

@@ -26,7 +26,10 @@ h1{
   text-align: center;
   font-size: 2.5rem;
 }
-
+h3{
+  color: white;
+  text-align: center;
+}
 button {
   background: linear-gradient(180deg, #ebaf8d -22.64%, #d1534b 91.54%);
   border: none;
