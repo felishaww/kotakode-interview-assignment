@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
-import './App.css';
-import TodoList from './TodoList';
+import React, { useState } from "react";
+import TodoList from "./TodoList";
+import TodoForm from "./TodoForm";
 
 function App() {
-  const tasks = useState([
-    "Cuci Baju",
-    "Masak Nasi"
+  const [tasks, setTasks] = useState([
+    {
+      id: 1,
+      task: "Cuci Baju",
+    },
+    {
+      id: 2,
+      task: "Masak Nasi",
+    },
   ]);
+
+  const [inputTask, setInputTask] = useState("");
   return (
     <div className="App">
       <h1>Pekerjaan Rumah Yang Perlu Dilakukan</h1>
-      <input value=""/>
-      <button onClick="">Tambah</button>
-      <TodoList tasks={tasks} />
+      <TodoForm
+        inputTask={inputTask}
+        setInputTask={setInputTask}
+        tasks={tasks}
+        setTasks={setTasks}
+      />
+      <TodoList tasks={tasks} setTasks={setTasks} />
     </div>
   );
 }
